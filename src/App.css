@@ -1,0 +1,74 @@
+html, body{
+  background-color: #6A62D2;
+  height:100%;
+}
+
+h6{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root{
+  background-color: #6A62D2;
+  height:100%;
+}
+
+.form-header{
+  font-size: 15px;
+}
+
+.main-container{
+  display: table;
+  height:100%;
+  text-align: center;
+  background-color: #6A62D2;
+}
+
+.login-register-container{
+  width: 100%;
+  background-color: #fff;
+  font-family: sans-serif;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px black;
+}
+
+.login-page-button {
+  margin-top: 30%;
+  height: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 2px solid #6A62D2;
+}
+
+.register-page-button{
+  margin-top: 13%;
+  height: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 2px solid #6A62D2;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .login-page-button{
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-page-button {
+    margin-top: 7%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form-header{
+    font-size: 12px;
+  }
+}
