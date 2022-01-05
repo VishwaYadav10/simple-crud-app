@@ -29,6 +29,19 @@ class Register extends Component {
         this.props.history.push(Constants.LOGIN_ROUTE);
     }
 
+    handleRegisterSubmit = () => {
+        CommunicationUtil.callGetService("https://simple-crud-app-backend-v2-neibu.ondigitalocean.app/api/fetchAll",
+            this.handleRegisterButtonClickSuccess, this.handleRegisterButtonClickFailure)
+    }
+
+    handleRegisterButtonClickSuccess = _response => {
+        console.log(_response);
+    }
+
+    handleRegisterButtonClickFailure = _response => {
+        console.log(_response);
+    }
+
     render() {
         return (
             <ReactBootstrap.Container fluid className='main-container'>
@@ -130,10 +143,12 @@ class Register extends Component {
 
                                     <ReactBootstrap.Col xs={12} style={{}}>
                                         <MaterialButton
+                                            type="button"
                                             className="register-page-button"
                                             label="Sign Up"
                                             buttonIcon={<FontAwesomeIcon icon={faUserPlus} style={{ fontSize: 10 }} />}
                                             width="120px"
+                                            onClick={this.handleRegisterSubmit}
                                         />
                                     </ReactBootstrap.Col>
 

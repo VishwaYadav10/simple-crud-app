@@ -40,7 +40,7 @@ class Login extends Component {
         };
         // CommunicationUtil.callGetService("http://localhost:4000/api/fetchAll",
         //     this.handleLoginButtonClickSuccess, this.handleLoginButtonClickFailure);
-        CommunicationUtil.callPostService("https://simple-crud-app-backend.herokuapp.com/api/loginUser",
+        CommunicationUtil.callPostService("https://simple-crud-app-backend-v2-neibu.ondigitalocean.app/api/loginUser",
             JSON.stringify(jsonObj), this.handleLoginButtonClickSuccess, this.handleLoginButtonClickFailure)
     }
 
