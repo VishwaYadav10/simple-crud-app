@@ -9,6 +9,7 @@ import { IconButton } from '@material-ui/core';
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { ArrowBack } from '@material-ui/icons';
 import { withRouter } from 'react-router';
+import * as CommunicationUtil from '../Utilities/CommunicationUtil';
 
 class Register extends Component {
 
